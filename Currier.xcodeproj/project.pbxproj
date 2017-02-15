@@ -10,6 +10,8 @@
 		0C0A06B11E52FD660098FC41 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A06A71E52FD660098FC41 /* Currier.framework */; };
 		0C0A06B61E52FD660098FC41 /* CurrierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A06B51E52FD660098FC41 /* CurrierTests.swift */; };
 		0C0A06B81E52FD660098FC41 /* Currier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A06AA1E52FD660098FC41 /* Currier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C0A071A1E538E360098FC41 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
+		0C0A071C1E538E4E0098FC41 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		0C0A06B01E52FD660098FC41 /* CurrierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0A06B51E52FD660098FC41 /* CurrierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrierTests.swift; sourceTree = "<group>"; };
 		0C0A06B71E52FD660098FC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C0A07191E538E360098FC41 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		0C0A071B1E538E4E0098FC41 /* CurryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			children = (
 				0C0A06AA1E52FD660098FC41 /* Currier.h */,
 				0C0A06AB1E52FD660098FC41 /* Info.plist */,
+				0C0A07191E538E360098FC41 /* Curry.swift */,
 			);
 			path = Currier;
 			sourceTree = "<group>";
@@ -82,6 +87,7 @@
 			children = (
 				0C0A06B51E52FD660098FC41 /* CurrierTests.swift */,
 				0C0A06B71E52FD660098FC41 /* Info.plist */,
+				0C0A071B1E538E4E0098FC41 /* CurryTests.swift */,
 			);
 			path = CurrierTests;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 					0C0A06A61E52FD660098FC41 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X9VLH29SKZ;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					0C0A06AF1E52FD660098FC41 = {
@@ -198,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0A071A1E538E360098FC41 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0A06B61E52FD660098FC41 /* CurrierTests.swift in Sources */,
+				0C0A071C1E538E4E0098FC41 /* CurryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +331,7 @@
 		0C0A06BC1E52FD660098FC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
@@ -335,6 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -342,6 +353,7 @@
 		0C0A06BD1E52FD660098FC41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
@@ -362,6 +374,7 @@
 		0C0A06BF1E52FD660098FC41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
 				INFOPLIST_FILE = CurrierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +387,7 @@
 		0C0A06C01E52FD660098FC41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = X9VLH29SKZ;
 				INFOPLIST_FILE = CurrierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -402,6 +416,7 @@
 				0C0A06BD1E52FD660098FC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0C0A06BE1E52FD660098FC41 /* Build configuration list for PBXNativeTarget "CurrierTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +425,7 @@
 				0C0A06C01E52FD660098FC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
