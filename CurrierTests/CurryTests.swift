@@ -81,6 +81,12 @@ class CurryTests: XCTestCase {
         XCTAssertEqual(9, result.value)
     }
     
+    func testOperatorWithTwoParams() {
+        
+        let result = curry(*)(2)(3)
+        XCTAssertEqual(6, result)
+    }
+    
     func testTwoGenericParams() {
         
         func twoGenerics<A: Comparable>(first: A, second: A) -> A {
@@ -88,7 +94,7 @@ class CurryTests: XCTestCase {
         }
         
         let result = curry(twoGenerics)("alpha")("beta")
-        
+
         XCTAssertEqual("beta", result)
     }
     
