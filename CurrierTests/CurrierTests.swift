@@ -10,6 +10,5 @@ import XCTest
 @testable import Currier
 
 class CurrierTests: XCTestCase {
-    
-    
+
 }
