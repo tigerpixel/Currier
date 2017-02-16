@@ -32,3 +32,14 @@ public func curry<A,B,C,D,Result>(_ uncurried: @escaping (A,B,C,D) -> Result) ->
         }
     }
 }
+
+public func curry<A,B,C,D,E,Result>(_ uncurried: @escaping (A,B,C,D,E) -> Result) -> (A) -> (B) -> (C) -> (D) -> (E) -> Result {
+    
+    return { a in { b in { c in { d in { e in
+                        return uncurried(a,b,c,d,e)
+                    }
+                }
+            }
+        }
+    }
+}

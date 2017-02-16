@@ -124,4 +124,16 @@ class CurryTests: XCTestCase {
         XCTAssertEqual(10, result)
     }
     
+    func testFiveParams() {
+        
+        func five(first: String, second: String, third: Int, fourth: Int, fifth: ValueType) -> Int {
+            return first.characters.count + second.characters.count + third + fourth + Int(fifth.value)
+        }
+        
+        let curried = curry(five)
+        let result = curried("a")("Ab")(3)(4)(ValueType(value: 5))
+            
+        XCTAssertEqual(15, result)
+    }
+    
 }
