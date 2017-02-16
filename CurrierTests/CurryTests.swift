@@ -100,4 +100,16 @@ class CurryTests: XCTestCase {
     
     // MARK: Increasing numbers of parameters.
     
+    func testThreeeParams() {
+        
+        func three(first: String, second: String, third: Int) -> Int {
+            return first.characters.count + second.characters.count + third
+        }
+        
+        let curried = curry(three)
+        let result = curried("a")("Ab")(3)
+        
+        XCTAssertEqual(6, result)
+    }
+    
 }

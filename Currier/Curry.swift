@@ -9,8 +9,16 @@
 public func curry<A,B,Result>(_ uncurried: @escaping (A,B) -> Result) -> (A) -> (B) -> Result {
     
     return { a in { b in
-        return uncurried(a,b)
+            return uncurried(a,b)
         }
     }
+}
+
+public func curry<A,B,C,Result>(_ uncurried: @escaping (A,B,C) -> Result) -> (A) -> (B) -> (C) -> Result {
     
+    return { a in { b in { c in
+                return uncurried(a,b,c)
+            }
+        }
+    }
 }
