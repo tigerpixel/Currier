@@ -51,3 +51,17 @@ public func curry<First, Second, Third, Fourth, Fifth, Result>(_ uncurried:
         }
     }
 }
+
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Result>(_ uncurried:
+    @escaping (First, Second, Third, Fourth, Fifth, Sixth) -> Result)
+    -> (First) -> (Second) -> (Third) -> (Fourth) -> (Fifth) -> (Sixth) -> Result {
+
+        return { first in { second in { third in { fourth in { fifth in { sixth in
+                            return uncurried(first, second, third, fourth, fifth, sixth)
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

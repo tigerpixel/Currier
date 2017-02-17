@@ -170,4 +170,19 @@ class CurryTests: XCTestCase {
         XCTAssertEqual(digitSum(of:5), result)
     }
 
+    func testSixParams() {
+
+        func six(first: String, second: Int, third: Float,
+                 fourth: ReferenceType, fifth: ValueType, sixth: Bool) -> Int {
+
+            return first.characters.count + second + Int(third)
+                + Int(fourth.value) + Int(fifth.value) + (sixth ? 6 : 0)
+        }
+
+        let curried = curry(six)
+        let result = curried("a")(2)(3.0)(ReferenceType(value:4.0))(ValueType(value: 5))(true)
+
+        XCTAssertEqual(digitSum(of:6), result)
+    }
+
 }
