@@ -264,6 +264,39 @@ class CurryTests: XCTestCase {
         XCTAssertEqual("123456789AB", result)
     }
 
+    // MARK: The largest size curry method tested using a struct initializer.
+
+    // Swap to use a struct initializer, it is the most likely scenario for using a function with this many parameters.
+
+    struct Twelve {
+
+        let first: String
+        let second: String
+        let third: String
+        let fourth: String
+        let fifth: String
+        let sixth: String
+        let seventh: String
+        let eighth: String
+        let ninth: String
+        let tenth: String
+        let eleventh: String
+        let twelfth: String
+
+        func makeResult() -> String {
+            return first + second + third + fourth + fifth + sixth
+                + seventh + eighth + ninth + tenth + eleventh + twelfth
+        }
+    }
+
+    func testTwelveParams() {
+
+        let curried = curry(Twelve.init)
+        let resultValue = curried("1")("2")("3")("4")("5")("6")("7")("8")("9")("A")("B")("C")
+
+        XCTAssertEqual("123456789ABC", resultValue.makeResult())
+    }
+
     // swiftlint:enable function_parameter_count
 
 }
