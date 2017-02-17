@@ -170,6 +170,8 @@ class CurryTests: XCTestCase {
         XCTAssertEqual(digitSum(of:5), result)
     }
 
+    // swiftlint:disable function_parameter_count
+
     func testSixParams() {
 
         func six(first: String, second: Int, third: Float,
@@ -216,5 +218,22 @@ class CurryTests: XCTestCase {
 
         XCTAssertEqual("12345678", result)
     }
+
+    func testNineParams() {
+
+        func nine(first: String, second: String, third: String,
+                  fourth: String, fifth: String, sixth: String,
+                  seventh: String, eighth: String, ninth: String) -> String {
+
+            return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth
+        }
+
+        let curried = curry(nine)
+        let result = curried("1")("2")("3")("4")("5")("6")("7")("8")("9")
+
+        XCTAssertEqual("123456789", result)
+    }
+
+    // swiftlint:enable function_parameter_count
 
 }
