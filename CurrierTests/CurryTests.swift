@@ -203,4 +203,18 @@ class CurryTests: XCTestCase {
         XCTAssertEqual("1234567", result)
     }
 
+    func testEightParams() {
+
+        func eight(first: String, second: String, third: String, fourth: String,
+                   fifth: String, sixth: String, seventh: String, eighth: String) -> String {
+
+            return first + second + third + fourth + fifth + sixth + seventh + eighth
+        }
+
+        let curried = curry(eight)
+        let result = curried("1")("2")("3")("4")("5")("6")("7")("8")
+
+        XCTAssertEqual("12345678", result)
+    }
+
 }
