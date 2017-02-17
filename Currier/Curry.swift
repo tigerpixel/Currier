@@ -135,3 +135,26 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, N
         }
     }
 }
+
+public func curry<First, Second, Third, Fourth, Fifth, Sixth,
+                  Seventh, Eighth, Ninth, Tenth, Eleventh, Result>(_ uncurried:
+    @escaping (First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, Ninth, Tenth, Eleventh) -> Result)
+    -> (First) -> (Second) -> (Third) -> (Fourth) -> (Fifth) ->
+    (Sixth) -> (Seventh) -> (Eighth) -> (Ninth) -> (Tenth) -> (Eleventh) -> Result {
+
+                                                return { first in { second in { third in { fourth in { fifth in { sixth
+                                                    in { seventh in { eighth in { ninth in { tenth in { eleventh in
+                                                            return uncurried(first, second, third, fourth, fifth, sixth,
+                                                                             seventh, eighth, ninth, tenth, eleventh)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

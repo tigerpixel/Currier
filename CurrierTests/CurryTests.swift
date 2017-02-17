@@ -249,6 +249,21 @@ class CurryTests: XCTestCase {
         XCTAssertEqual("123456789A", result)
     }
 
+    func testElevenParams() {
+
+        func eleven(first: String, second: String, third: String, fourth: String,
+                    fifth: String, sixth: String, seventh: String, eighth: String,
+                    ninth: String, tenth: String, eleventh: String) -> String {
+
+            return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth + tenth + eleventh
+        }
+
+        let curried = curry(eleven)
+        let result = curried("1")("2")("3")("4")("5")("6")("7")("8")("9")("A")("B")
+
+        XCTAssertEqual("123456789AB", result)
+    }
+
     // swiftlint:enable function_parameter_count
 
 }
