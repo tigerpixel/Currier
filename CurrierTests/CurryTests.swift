@@ -118,10 +118,14 @@ class CurryTests: XCTestCase {
         XCTAssertEqual("beta", result)
     }
 
+    // MARK: Increasing numbers of distinct parameters.
+
+    // Parameter types differ so that changes in order can be detected while testing multiple types.
+
     func testTwoDistinctParams() {
 
-        func three(first: String, second: Int) -> Int {
-            return first.characters.count + second
+        func three(first: String, second: Float) -> Int {
+            return first.characters.count + Int(second)
         }
 
         let curried = curry(three)
@@ -130,11 +134,7 @@ class CurryTests: XCTestCase {
         XCTAssertEqual(digitSum(of:2), result)
     }
 
-    // MARK: Increasing numbers of parameters.
-
-    // Parameter types differ so that changes in order can be detected while testing multiple types.
-
-    func testThreeParams() {
+    func testThreeDistinctParams() {
 
         func three(first: String, second: Int, third: Float) -> Int {
             return first.characters.count + second + Int(third)
@@ -146,7 +146,7 @@ class CurryTests: XCTestCase {
         XCTAssertEqual(digitSum(of:3), result)
     }
 
-    func testFourParams() {
+    func testFourDistinctParams() {
 
         func four(first: String, second: Int, third: Float, fourth: ReferenceType) -> Int {
             return first.characters.count + second + Int(third) + Int(fourth.value)
@@ -158,7 +158,7 @@ class CurryTests: XCTestCase {
         XCTAssertEqual(digitSum(of:4), result)
     }
 
-    func testFiveParams() {
+    func testFiveDistinctParams() {
 
         func five(first: String, second: Int, third: Float, fourth: ReferenceType, fifth: ValueType) -> Int {
             return first.characters.count + second + Int(third) + Int(fourth.value) + Int(fifth.value)
@@ -183,6 +183,24 @@ class CurryTests: XCTestCase {
         let result = curried("a")(2)(3.0)(ReferenceType(value:4.0))(ValueType(value: 5))(true)
 
         XCTAssertEqual(digitSum(of:6), result)
+    }
+
+    // MARK: Increasing numbers of string parameters.
+
+    // Multiple types are now adiquately tested, so revert to just using string types for simplicity.
+
+    func testSevenParams() {
+
+        func seven(first: String, second: String, third: String, fourth: String,
+                   fifth: String, sixth: String, seventh: String) -> String {
+
+            return first + second + third + fourth + fifth + sixth + seventh
+        }
+
+        let curried = curry(seven)
+        let result = curried("1")("2")("3")("4")("5")("6")("7")
+
+        XCTAssertEqual("1234567", result)
     }
 
 }
