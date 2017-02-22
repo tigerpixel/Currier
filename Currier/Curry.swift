@@ -11,7 +11,8 @@ public func curry<First, Second, Result>(_ uncurried: // Declare generic names.
     @escaping (First, Second) -> Result) // Input signature.
     -> (First) -> (Second) -> Result { // Output signature.
 
-    return { first in { second in
+    return { (first: First) -> (Second) -> Result
+        in { (second: Second) -> Result in
 
             return uncurried(first, second)
         }
