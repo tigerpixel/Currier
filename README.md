@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/tigerpixel/Currier.svg?branch=master)](https://travis-ci.org/tigerpixel/Currier)
+
 # Currier
 
 ## Example
