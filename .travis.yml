@@ -10,4 +10,4 @@ language: swift
 # - gem install cocoapods # Since Travis is not always on latest version
 # - pod install --project-directory=Example
 script:
-test -project Currier.xcodeproj -scheme Currier -destination 'platform=iOS Simulator,name=iPhone 7'
+- xcodebuild test -project Currier.xcodeproj -scheme Currier -destination 'platform=iOS Simulator,name=iPhone 7'
