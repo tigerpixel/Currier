@@ -14,6 +14,5 @@ install:
   - ./install_swiftlint.sh
   
 script:
-script:
   - swiftlint  
 - xcodebuild test -project Currier.xcodeproj -scheme Currier -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7'
