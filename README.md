@@ -7,7 +7,7 @@ Currier transforms any function you wish into a curried version of that function
 ```swift
 let myFunction: (Bool, Int) -> Float
 ...
-let curriedFunction = cury(myFunction)
+let curriedFunction = curry(myFunction) // Currier used here.
 let firstApplication = curriedFunction(true)
 let result = firstApplication(10)
 ```
