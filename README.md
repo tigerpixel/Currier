@@ -15,7 +15,7 @@ let firstApplication = curriedFunction(true)
 let result = firstApplication(10)
 ```
 
-The unit tests provide examples of calling the curry function using different numbers of parameters. The version of the ‘curry’ function which takes two parameters is commented and strongly typed to help with understanding the technique used.
+The unit tests provide examples of calling the curry function using different numbers of parameters. The version of the function which takes two parameters is explicitly typed and commented. This is to help with understanding the technique used.
 
 ## Requirements
 
