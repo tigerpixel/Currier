@@ -1,6 +1,9 @@
 ## Currier
 
 [![Build Status](https://travis-ci.org/tigerpixel/Currier.svg?branch=master)](https://travis-ci.org/tigerpixel/Currier)
+[![Version](https://img.shields.io/cocoapods/v/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
+[![Platform](https://img.shields.io/cocoapods/p/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
+[![License](https://img.shields.io/cocoapods/l/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
 
 Currier transforms any function you wish into a curried version of that function. This is done by wrapping the function in a simple call to the function 'curry'. 
 
@@ -20,8 +23,14 @@ There are no external requirements for this project, just Swift.
 
 ## Installation
 
-Currier will shortly be available through Cocoapods, Carthage and the Swift Package Manager.
+Currier is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "Currier"
+```
+Currier will shortly be available through Carthage and the Swift Package Manager.
 
 ## MIT License
 
-Details can be found within the project license file.
+Currier is available under the MIT license. Details can be found within the LICENSE file.
