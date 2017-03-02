@@ -5,7 +5,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
 [![License](https://img.shields.io/cocoapods/l/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
 
-Currier transforms any Swift function into a curried version of that function. This is achieved by wrapping the function in a simple 'curry' function call.
+Currier transforms any Swift function into a curried version of that function. This is achieved by wrapping it in a simple 'curry' call.
 
 ```swift
 let myFunction: (Bool, Int) -> Float
@@ -34,7 +34,7 @@ pod "Currier"
 
 ### Carthage
 
-If you use [Carthage][https://github.com/Carthage/Carthage] to manage your dependencies, simply add the following line to your Cartfile:
+If you use [Carthage](https://github.com/Carthage/Carthage) to manage your dependencies, simply add the following line to your Cartfile:
 
 ```
 github "tigerpixel/Currier"
@@ -42,9 +42,9 @@ github "tigerpixel/Currier"
 
 If you use Carthage to build your dependencies, make sure you have added `Currier.framework` to the "_Linked Frameworks and Libraries_" section of your target, and have included them in your Carthage framework copying build phase.
 
-### Git submodule
+### Git Submodule
 
-1. Add the Currier repository as a [submodule][https://git-scm.com/book/en/v2/Git-Tools-Submodules] of your application’s repository.
+1. Add the Currier repository as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) of your application’s repository.
 1. Run `git submodule update --init --recursive` from within the Currier folder.
 1. Drag and drop `Currier.xcodeproj` into your application’s Xcode project or workspace.
 1. On the “General” tab of your application target’s settings, add `Currier.framework`. to the “Embedded Binaries” section.
