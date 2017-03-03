@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0C0A06B11E52FD660098FC41 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A06A71E52FD660098FC41 /* Currier.framework */; };
-		0C0A06B61E52FD660098FC41 /* CurrierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A06B51E52FD660098FC41 /* CurrierTests.swift */; };
 		0C0A06B81E52FD660098FC41 /* Currier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A06AA1E52FD660098FC41 /* Currier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C0A071A1E538E360098FC41 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
 		0C0A071C1E538E4E0098FC41 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
+		0C1E61471E69EA640034F4A3 /* Currier-tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C1E61451E69EA640034F4A3 /* Currier-tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C1E61541E69EACD0034F4A3 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E61431E69EA640034F4A3 /* Currier.framework */; };
+		0C1E615A1E69EB170034F4A3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
 		0C6F5C9F1E67941F0071F2B4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F5C9D1E67941F0071F2B4 /* LICENSE */; };
 		0C6F5CAB1E6813FB0071F2B4 /* Currier-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6F5CA91E6813FB0071F2B4 /* Currier-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C6F5CAF1E6815400071F2B4 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
 		0C6F5CB91E6817B00071F2B4 /* Currier-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6F5CB71E6817B00071F2B4 /* Currier-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C6F5CBD1E6818400071F2B4 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
 		0C6F5CC71E68187A0071F2B4 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6F5CB51E6817B00071F2B4 /* Currier.framework */; };
-		0C6F5CCD1E6818950071F2B4 /* CurrierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A06B51E52FD660098FC41 /* CurrierTests.swift */; };
 		0C6F5CCE1E68189F0071F2B4 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0C0A06A61E52FD660098FC41;
 			remoteInfo = Currier;
+		};
+		0C1E61551E69EACD0034F4A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C0A069E1E52FD650098FC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1E61421E69EA640034F4A3;
+			remoteInfo = "Currier-tvOS";
 		};
 		0C6F5CC81E68187A0071F2B4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -44,10 +52,14 @@
 		0C0A06AA1E52FD660098FC41 /* Currier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Currier.h; sourceTree = "<group>"; };
 		0C0A06AB1E52FD660098FC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0A06B01E52FD660098FC41 /* CurrierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0C0A06B51E52FD660098FC41 /* CurrierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrierTests.swift; sourceTree = "<group>"; };
 		0C0A06B71E52FD660098FC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0A07191E538E360098FC41 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		0C0A071B1E538E4E0098FC41 /* CurryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurryTests.swift; sourceTree = "<group>"; };
+		0C1E61431E69EA640034F4A3 /* Currier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Currier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1E61451E69EA640034F4A3 /* Currier-tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Currier-tvOS.h"; sourceTree = "<group>"; };
+		0C1E61461E69EA640034F4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1E614F1E69EACD0034F4A3 /* CurrierTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CurrierTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C1E61531E69EACD0034F4A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C6F5C9D1E67941F0071F2B4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0C6F5C9E1E67941F0071F2B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0C6F5CA71E6813FB0071F2B4 /* Currier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Currier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +85,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0A06B11E52FD660098FC41 /* Currier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E613F1E69EA640034F4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E614C1E69EACD0034F4A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E61541E69EACD0034F4A3 /* Currier.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,8 +135,10 @@
 				0C0A06A91E52FD660098FC41 /* Currier */,
 				0C6F5CA81E6813FB0071F2B4 /* Currier-watchOS */,
 				0C6F5CB61E6817B00071F2B4 /* Currier-macOS */,
+				0C1E61441E69EA640034F4A3 /* Currier-tvOS */,
 				0C0A06B41E52FD660098FC41 /* CurrierTests */,
 				0C6F5CC31E68187A0071F2B4 /* CurrierTests-macOS */,
+				0C1E61501E69EACD0034F4A3 /* CurrierTests-tvOS */,
 				0C0A06A81E52FD660098FC41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,6 +151,8 @@
 				0C6F5CA71E6813FB0071F2B4 /* Currier.framework */,
 				0C6F5CB51E6817B00071F2B4 /* Currier.framework */,
 				0C6F5CC21E68187A0071F2B4 /* CurrierTests-macOS.xctest */,
+				0C1E61431E69EA640034F4A3 /* Currier.framework */,
+				0C1E614F1E69EACD0034F4A3 /* CurrierTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,11 +170,27 @@
 		0C0A06B41E52FD660098FC41 /* CurrierTests */ = {
 			isa = PBXGroup;
 			children = (
-				0C0A06B51E52FD660098FC41 /* CurrierTests.swift */,
 				0C0A06B71E52FD660098FC41 /* Info.plist */,
 				0C0A071B1E538E4E0098FC41 /* CurryTests.swift */,
 			);
 			path = CurrierTests;
+			sourceTree = "<group>";
+		};
+		0C1E61441E69EA640034F4A3 /* Currier-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E61451E69EA640034F4A3 /* Currier-tvOS.h */,
+				0C1E61461E69EA640034F4A3 /* Info.plist */,
+			);
+			path = "Currier-tvOS";
+			sourceTree = "<group>";
+		};
+		0C1E61501E69EACD0034F4A3 /* CurrierTests-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C1E61531E69EACD0034F4A3 /* Info.plist */,
+			);
+			path = "CurrierTests-tvOS";
 			sourceTree = "<group>";
 		};
 		0C6F5CA11E6798690071F2B4 /* Docs */ = {
@@ -189,6 +236,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C0A06B81E52FD660098FC41 /* Currier.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E61401E69EA640034F4A3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E61471E69EA640034F4A3 /* Currier-tvOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +301,42 @@
 			name = CurrierTests;
 			productName = CurrierTests;
 			productReference = 0C0A06B01E52FD660098FC41 /* CurrierTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C1E61421E69EA640034F4A3 /* Currier-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1E614A1E69EA640034F4A3 /* Build configuration list for PBXNativeTarget "Currier-tvOS" */;
+			buildPhases = (
+				0C1E613E1E69EA640034F4A3 /* Sources */,
+				0C1E613F1E69EA640034F4A3 /* Frameworks */,
+				0C1E61401E69EA640034F4A3 /* Headers */,
+				0C1E61411E69EA640034F4A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Currier-tvOS";
+			productName = "Currier-tvOS";
+			productReference = 0C1E61431E69EA640034F4A3 /* Currier.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C1E614E1E69EACD0034F4A3 /* CurrierTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C1E61571E69EACD0034F4A3 /* Build configuration list for PBXNativeTarget "CurrierTests-tvOS" */;
+			buildPhases = (
+				0C1E614B1E69EACD0034F4A3 /* Sources */,
+				0C1E614C1E69EACD0034F4A3 /* Frameworks */,
+				0C1E614D1E69EACD0034F4A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C1E61561E69EACD0034F4A3 /* PBXTargetDependency */,
+			);
+			name = "CurrierTests-tvOS";
+			productName = "CurrierTests-tvOS";
+			productReference = 0C1E614F1E69EACD0034F4A3 /* CurrierTests-tvOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		0C6F5CA61E6813FB0071F2B4 /* Currier-watchOS */ = {
@@ -321,6 +412,16 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 					};
+					0C1E61421E69EA640034F4A3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X9VLH29SKZ;
+						ProvisioningStyle = Automatic;
+					};
+					0C1E614E1E69EACD0034F4A3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X9VLH29SKZ;
+						ProvisioningStyle = Automatic;
+					};
 					0C6F5CA61E6813FB0071F2B4 = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -351,8 +452,10 @@
 				0C0A06A61E52FD660098FC41 /* Currier */,
 				0C6F5CA61E6813FB0071F2B4 /* Currier-watchOS */,
 				0C6F5CB41E6817B00071F2B4 /* Currier-macOS */,
+				0C1E61421E69EA640034F4A3 /* Currier-tvOS */,
 				0C0A06AF1E52FD660098FC41 /* CurrierTests */,
 				0C6F5CC11E68187A0071F2B4 /* CurrierTests-macOS */,
+				0C1E614E1E69EACD0034F4A3 /* CurrierTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -367,6 +470,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0C0A06AE1E52FD660098FC41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E61411E69EA640034F4A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E614D1E69EACD0034F4A3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -425,8 +542,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0A06B61E52FD660098FC41 /* CurrierTests.swift in Sources */,
 				0C0A071C1E538E4E0098FC41 /* CurryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E613E1E69EA640034F4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C1E615A1E69EB170034F4A3 /* Curry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C1E614B1E69EACD0034F4A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,7 +581,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C6F5CCD1E6818950071F2B4 /* CurrierTests.swift in Sources */,
 				0C6F5CCE1E68189F0071F2B4 /* CurryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +592,11 @@
 			isa = PBXTargetDependency;
 			target = 0C0A06A61E52FD660098FC41 /* Currier */;
 			targetProxy = 0C0A06B21E52FD660098FC41 /* PBXContainerItemProxy */;
+		};
+		0C1E61561E69EACD0034F4A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C1E61421E69EA640034F4A3 /* Currier-tvOS */;
+			targetProxy = 0C1E61551E69EACD0034F4A3 /* PBXContainerItemProxy */;
 		};
 		0C6F5CC91E68187A0071F2B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -643,6 +778,82 @@
 			};
 			name = Release;
 		};
+		0C1E61481E69EA640034F4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Currier-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.Currier-tvOS";
+				PRODUCT_NAME = Currier;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		0C1E61491E69EA640034F4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Currier-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.Currier-tvOS";
+				PRODUCT_NAME = Currier;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		0C1E61581E69EACD0034F4A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				INFOPLIST_FILE = "CurrierTests-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.CurrierTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		0C1E61591E69EACD0034F4A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				INFOPLIST_FILE = "CurrierTests-tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.CurrierTests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Release;
+		};
 		0C6F5CAD1E6813FB0071F2B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -798,6 +1009,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		0C1E614A1E69EA640034F4A3 /* Build configuration list for PBXNativeTarget "Currier-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1E61481E69EA640034F4A3 /* Debug */,
+				0C1E61491E69EA640034F4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0C1E61571E69EACD0034F4A3 /* Build configuration list for PBXNativeTarget "CurrierTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C1E61581E69EACD0034F4A3 /* Debug */,
+				0C1E61591E69EACD0034F4A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		0C6F5CAC1E6813FB0071F2B4 /* Build configuration list for PBXNativeTarget "Currier-watchOS" */ = {
 			isa = XCConfigurationList;
