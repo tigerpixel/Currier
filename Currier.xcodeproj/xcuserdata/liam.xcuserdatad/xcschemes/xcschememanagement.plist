@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Currier-macOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Currier-watchOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Currier.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>0C6F5CA61E6813FB0071F2B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C6F5CB41E6817B00071F2B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C6F5CC11E68187A0071F2B4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

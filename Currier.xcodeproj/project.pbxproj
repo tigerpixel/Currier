@@ -15,6 +15,11 @@
 		0C6F5C9F1E67941F0071F2B4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F5C9D1E67941F0071F2B4 /* LICENSE */; };
 		0C6F5CAB1E6813FB0071F2B4 /* Currier-watchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6F5CA91E6813FB0071F2B4 /* Currier-watchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C6F5CAF1E6815400071F2B4 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
+		0C6F5CB91E6817B00071F2B4 /* Currier-macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C6F5CB71E6817B00071F2B4 /* Currier-macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C6F5CBD1E6818400071F2B4 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
+		0C6F5CC71E68187A0071F2B4 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6F5CB51E6817B00071F2B4 /* Currier.framework */; };
+		0C6F5CCD1E6818950071F2B4 /* CurrierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A06B51E52FD660098FC41 /* CurrierTests.swift */; };
+		0C6F5CCE1E68189F0071F2B4 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +29,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0C0A06A61E52FD660098FC41;
 			remoteInfo = Currier;
+		};
+		0C6F5CC81E68187A0071F2B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C0A069E1E52FD650098FC41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C6F5CB41E6817B00071F2B4;
+			remoteInfo = "Currier-macOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,6 +53,11 @@
 		0C6F5CA71E6813FB0071F2B4 /* Currier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Currier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6F5CA91E6813FB0071F2B4 /* Currier-watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Currier-watchOS.h"; sourceTree = "<group>"; };
 		0C6F5CAA1E6813FB0071F2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6F5CB51E6817B00071F2B4 /* Currier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Currier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6F5CB71E6817B00071F2B4 /* Currier-macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Currier-macOS.h"; sourceTree = "<group>"; };
+		0C6F5CB81E6817B00071F2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6F5CC21E68187A0071F2B4 /* CurrierTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CurrierTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C6F5CC61E68187A0071F2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +83,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C6F5CB11E6817B00071F2B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6F5CBF1E68187A0071F2B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6F5CC71E68187A0071F2B4 /* Currier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -74,8 +106,10 @@
 			children = (
 				0C6F5CA11E6798690071F2B4 /* Docs */,
 				0C0A06A91E52FD660098FC41 /* Currier */,
-				0C0A06B41E52FD660098FC41 /* CurrierTests */,
 				0C6F5CA81E6813FB0071F2B4 /* Currier-watchOS */,
+				0C6F5CB61E6817B00071F2B4 /* Currier-macOS */,
+				0C0A06B41E52FD660098FC41 /* CurrierTests */,
+				0C6F5CC31E68187A0071F2B4 /* CurrierTests-macOS */,
 				0C0A06A81E52FD660098FC41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +120,8 @@
 				0C0A06A71E52FD660098FC41 /* Currier.framework */,
 				0C0A06B01E52FD660098FC41 /* CurrierTests.xctest */,
 				0C6F5CA71E6813FB0071F2B4 /* Currier.framework */,
+				0C6F5CB51E6817B00071F2B4 /* Currier.framework */,
+				0C6F5CC21E68187A0071F2B4 /* CurrierTests-macOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +164,23 @@
 			path = "Currier-watchOS";
 			sourceTree = "<group>";
 		};
+		0C6F5CB61E6817B00071F2B4 /* Currier-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F5CB71E6817B00071F2B4 /* Currier-macOS.h */,
+				0C6F5CB81E6817B00071F2B4 /* Info.plist */,
+			);
+			path = "Currier-macOS";
+			sourceTree = "<group>";
+		};
+		0C6F5CC31E68187A0071F2B4 /* CurrierTests-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F5CC61E68187A0071F2B4 /* Info.plist */,
+			);
+			path = "CurrierTests-macOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -144,6 +197,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6F5CAB1E6813FB0071F2B4 /* Currier-watchOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6F5CB21E6817B00071F2B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6F5CB91E6817B00071F2B4 /* Currier-macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +266,42 @@
 			productReference = 0C6F5CA71E6813FB0071F2B4 /* Currier.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		0C6F5CB41E6817B00071F2B4 /* Currier-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6F5CBA1E6817B00071F2B4 /* Build configuration list for PBXNativeTarget "Currier-macOS" */;
+			buildPhases = (
+				0C6F5CB01E6817B00071F2B4 /* Sources */,
+				0C6F5CB11E6817B00071F2B4 /* Frameworks */,
+				0C6F5CB21E6817B00071F2B4 /* Headers */,
+				0C6F5CB31E6817B00071F2B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Currier-macOS";
+			productName = "Currier-macOS";
+			productReference = 0C6F5CB51E6817B00071F2B4 /* Currier.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0C6F5CC11E68187A0071F2B4 /* CurrierTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C6F5CCA1E68187A0071F2B4 /* Build configuration list for PBXNativeTarget "CurrierTests-macOS" */;
+			buildPhases = (
+				0C6F5CBE1E68187A0071F2B4 /* Sources */,
+				0C6F5CBF1E68187A0071F2B4 /* Frameworks */,
+				0C6F5CC01E68187A0071F2B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C6F5CC91E68187A0071F2B4 /* PBXTargetDependency */,
+			);
+			name = "CurrierTests-macOS";
+			productName = "CurrierTests-macOS";
+			productReference = 0C6F5CC21E68187A0071F2B4 /* CurrierTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,10 +319,17 @@
 					};
 					0C0A06AF1E52FD660098FC41 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = X9VLH29SKZ;
 						ProvisioningStyle = Automatic;
 					};
 					0C6F5CA61E6813FB0071F2B4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					0C6F5CB41E6817B00071F2B4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					0C6F5CC11E68187A0071F2B4 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = X9VLH29SKZ;
 						ProvisioningStyle = Automatic;
@@ -246,7 +350,9 @@
 			targets = (
 				0C0A06A61E52FD660098FC41 /* Currier */,
 				0C6F5CA61E6813FB0071F2B4 /* Currier-watchOS */,
+				0C6F5CB41E6817B00071F2B4 /* Currier-macOS */,
 				0C0A06AF1E52FD660098FC41 /* CurrierTests */,
+				0C6F5CC11E68187A0071F2B4 /* CurrierTests-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -268,6 +374,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0C6F5CA51E6813FB0071F2B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6F5CB31E6817B00071F2B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6F5CC01E68187A0071F2B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,6 +438,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0C6F5CB01E6817B00071F2B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6F5CBD1E6818400071F2B4 /* Curry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C6F5CBE1E68187A0071F2B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6F5CCD1E6818950071F2B4 /* CurrierTests.swift in Sources */,
+				0C6F5CCE1E68189F0071F2B4 /* CurryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -325,6 +462,11 @@
 			isa = PBXTargetDependency;
 			target = 0C0A06A61E52FD660098FC41 /* Currier */;
 			targetProxy = 0C0A06B21E52FD660098FC41 /* PBXContainerItemProxy */;
+		};
+		0C6F5CC91E68187A0071F2B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C6F5CB41E6817B00071F2B4 /* Currier-macOS */;
+			targetProxy = 0C6F5CC81E68187A0071F2B4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,7 +619,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CurrierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.CurrierTests;
@@ -490,7 +633,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CurrierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.CurrierTests;
@@ -505,14 +649,14 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Currier-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.Currier-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier.watchOS;
 				PRODUCT_NAME = Currier;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -528,20 +672,100 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Currier-watchOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.Currier-watchOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier.watchOS;
 				PRODUCT_NAME = Currier;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0C6F5CBB1E6817B00071F2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Currier-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier;
+				PRODUCT_NAME = Currier;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0C6F5CBC1E6817B00071F2B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Currier-macOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier;
+				PRODUCT_NAME = Currier;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0C6F5CCB1E68187A0071F2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				INFOPLIST_FILE = "CurrierTests-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.CurrierTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0C6F5CCC1E68187A0071F2B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = X9VLH29SKZ;
+				INFOPLIST_FILE = "CurrierTests-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.CurrierTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -582,6 +806,25 @@
 				0C6F5CAE1E6813FB0071F2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6F5CBA1E6817B00071F2B4 /* Build configuration list for PBXNativeTarget "Currier-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6F5CBB1E6817B00071F2B4 /* Debug */,
+				0C6F5CBC1E6817B00071F2B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C6F5CCA1E68187A0071F2B4 /* Build configuration list for PBXNativeTarget "CurrierTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C6F5CCB1E68187A0071F2B4 /* Debug */,
+				0C6F5CCC1E68187A0071F2B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
