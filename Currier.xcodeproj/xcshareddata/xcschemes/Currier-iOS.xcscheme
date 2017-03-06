@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0C0A06A61E52FD660098FC41"
                BuildableName = "Currier.framework"
-               BlueprintName = "Currier"
+               BlueprintName = "Currier-iOS"
                ReferencedContainer = "container:Currier.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,7 +44,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C0A06A61E52FD660098FC41"
             BuildableName = "Currier.framework"
-            BlueprintName = "Currier"
+            BlueprintName = "Currier-iOS"
             ReferencedContainer = "container:Currier.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,7 +66,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C0A06A61E52FD660098FC41"
             BuildableName = "Currier.framework"
-            BlueprintName = "Currier"
+            BlueprintName = "Currier-iOS"
             ReferencedContainer = "container:Currier.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -84,7 +84,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0C0A06A61E52FD660098FC41"
             BuildableName = "Currier.framework"
-            BlueprintName = "Currier"
+            BlueprintName = "Currier-iOS"
             ReferencedContainer = "container:Currier.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
