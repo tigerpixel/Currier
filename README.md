@@ -3,6 +3,7 @@
 [![Build Status](https://travis-ci.org/tigerpixel/Currier.svg?branch=master)](https://travis-ci.org/tigerpixel/Currier)
 [![Version](https://img.shields.io/cocoapods/v/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
 [![Platform](https://img.shields.io/cocoapods/p/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
 
 Currier transforms any Swift function into a curried version of that function. This is achieved by wrapping it in a simple 'curry' call.
