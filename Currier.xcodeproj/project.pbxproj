@@ -765,7 +765,7 @@
 				INFOPLIST_FILE = Currier/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.Currier-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier;
 				PRODUCT_NAME = Currier;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -788,7 +788,7 @@
 				INFOPLIST_FILE = Currier/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tigerpixel.Currier-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier;
 				PRODUCT_NAME = Currier;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
@@ -841,7 +841,7 @@
 				INFOPLIST_FILE = Currier/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier.watchOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier;
 				PRODUCT_NAME = Currier;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -864,7 +864,7 @@
 				INFOPLIST_FILE = Currier/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier.watchOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tigerpixel.Currier;
 				PRODUCT_NAME = Currier;
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
