@@ -238,3 +238,79 @@ public func curry<First, Second, Third, Fourth,
         }
     }
 }
+
+public func curry<First, Second, Third, Fourth,
+                  Fifth, Sixth, Seventh, Eighth,
+                  Ninth, Tenth, Eleventh, Twelfth,
+                  Thirteenth, Result>(_ uncurried:
+
+    @escaping (First, Second, Third, Fourth,
+    Fifth, Sixth, Seventh, Eighth,
+    Ninth, Tenth, Eleventh, Twelfth, Thirteenth) -> Result)
+    -> (First) -> (Second) -> (Third) -> (Fourth)
+    -> (Fifth) -> (Sixth) -> (Seventh) -> (Eighth)
+    -> (Ninth) -> (Tenth) -> (Eleventh) -> (Twelfth)
+    -> (Thirteenth) -> Result {
+
+        return { first in { second in { third in { fourth
+            in { fifth in { sixth in { seventh in { eighth
+            in { ninth in { tenth in { eleventh in { twelfth
+            in { thirteenth in
+
+                                                        return uncurried(first, second, third, fourth,
+                                                                         fifth, sixth, seventh, eighth,
+                                                                         ninth, tenth, eleventh, twelfth,
+                                                                         thirteenth)
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+public func curry<First, Second, Third, Fourth,
+                  Fifth, Sixth, Seventh, Eighth,
+                  Ninth, Tenth, Eleventh, Twelfth,
+                  Thirteenth, Fourteenth, Result>(_ uncurried:
+
+    @escaping (First, Second, Third, Fourth,
+    Fifth, Sixth, Seventh, Eighth,
+    Ninth, Tenth, Eleventh, Twelfth,
+    Thirteenth, Fourteenth) -> Result)
+    -> (First) -> (Second) -> (Third) -> (Fourth)
+    -> (Fifth) -> (Sixth) -> (Seventh) -> (Eighth)
+    -> (Ninth) -> (Tenth) -> (Eleventh) -> (Twelfth)
+    -> (Thirteenth) -> (Fourteenth) -> Result {
+
+        return { first in { second in { third in { fourth
+            in { fifth in { sixth in { seventh in { eighth
+            in { ninth in { tenth in { eleventh in { twelfth
+            in { thirteenth in { fourteenth in
+
+                                                            return uncurried(first, second, third, fourth,
+                                                                             fifth, sixth, seventh, eighth,
+                                                                             ninth, tenth, eleventh, twelfth,
+                                                                             thirteenth, fourteenth)
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
