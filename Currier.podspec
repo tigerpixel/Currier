@@ -7,9 +7,9 @@
 Pod::Spec.new do |s|
   s.name             = 'Currier'
   s.version          = '0.1.0'
-  s.summary          = 'Fantastically easy FP function currying.'
+  s.summary          = 'Fantastically easy function currying in Swift.’
   s.description      = <<-DESC
-An easy to use function for producing a curried version of almost another function. Just wrap your function in a call like so ‘curry(myFunction)’ and the result will be a curried version of your function. A useful tool for working with parser combinators and other functional programming work. Has overrides for different numbers of parameters, currently up to 12. Pull requests for improvements are welcome.
+Produces a curried version of almost any other function. Just wrap your function in a single call ‘curry(myFunction)’ and the result will be a curried version of your original. A useful tool for working with parser combinators and other functional programming work. Currently supports up to 12 parameters. Pull requests for improvements are welcome.
                        DESC
 
   s.homepage         = 'https://github.com/tigerpixel/Currier'
