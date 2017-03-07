@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C0A06A61E52FD660098FC41"
+               BlueprintIdentifier = "0C1E61421E69EA640034F4A3"
                BuildableName = "Currier.framework"
-               BlueprintName = "Currier"
+               BlueprintName = "Currier-tvOS"
                ReferencedContainer = "container:Currier.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0C0A06AF1E52FD660098FC41"
-               BuildableName = "CurrierTests.xctest"
-               BlueprintName = "CurrierTests"
+               BlueprintIdentifier = "0C1E614E1E69EACD0034F4A3"
+               BuildableName = "CurrierTests-tvOS.xctest"
+               BlueprintName = "CurrierTests-tvOS"
                ReferencedContainer = "container:Currier.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C0A06A61E52FD660098FC41"
+            BlueprintIdentifier = "0C1E61421E69EA640034F4A3"
             BuildableName = "Currier.framework"
-            BlueprintName = "Currier"
+            BlueprintName = "Currier-tvOS"
             ReferencedContainer = "container:Currier.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C0A06A61E52FD660098FC41"
+            BlueprintIdentifier = "0C1E61421E69EA640034F4A3"
             BuildableName = "Currier.framework"
-            BlueprintName = "Currier"
+            BlueprintName = "Currier-tvOS"
             ReferencedContainer = "container:Currier.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0C0A06A61E52FD660098FC41"
+            BlueprintIdentifier = "0C1E61421E69EA640034F4A3"
             BuildableName = "Currier.framework"
-            BlueprintName = "Currier"
+            BlueprintName = "Currier-tvOS"
             ReferencedContainer = "container:Currier.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
