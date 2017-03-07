@@ -297,6 +297,36 @@ class CurryTests: XCTestCase {
         XCTAssertEqual("123456789ABC", resultValue.makeResult())
     }
 
+    struct Thirteen {
+
+        let first: String
+        let second: String
+        let third: String
+        let fourth: String
+        let fifth: String
+        let sixth: String
+        let seventh: String
+        let eighth: String
+        let ninth: String
+        let tenth: String
+        let eleventh: String
+        let twelfth: String
+        let thirteenth: String
+
+        func makeResult() -> String {
+            return first + second + third + fourth + fifth + sixth
+                + seventh + eighth + ninth + tenth + eleventh + twelfth + thirteenth
+        }
+    }
+
+    func testThirteenParams() {
+
+        let curried = curry(Thirteen.init)
+        let resultValue = curried("1")("2")("3")("4")("5")("6")("7")("8")("9")("A")("B")("C")("D")
+
+        XCTAssertEqual("123456789ABCD", resultValue.makeResult())
+    }
+
     // swiftlint:enable function_parameter_count
 
 }
