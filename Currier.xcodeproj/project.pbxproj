@@ -12,6 +12,8 @@
 		0C0A06B81E52FD660098FC41 /* Currier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A06AA1E52FD660098FC41 /* Currier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C0A071A1E538E360098FC41 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
 		0C0A071C1E538E4E0098FC41 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
+		0C6F5C9F1E67941F0071F2B4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0C6F5C9D1E67941F0071F2B4 /* LICENSE */; };
+		0C6F5CA01E67941F0071F2B4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0C6F5C9E1E67941F0071F2B4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		0C0A06B71E52FD660098FC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0A07191E538E360098FC41 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		0C0A071B1E538E4E0098FC41 /* CurryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurryTests.swift; sourceTree = "<group>"; };
+		0C6F5C9D1E67941F0071F2B4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0C6F5C9E1E67941F0071F2B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 		0C0A069D1E52FD650098FC41 = {
 			isa = PBXGroup;
 			children = (
+				0C6F5CA11E6798690071F2B4 /* Docs */,
 				0C0A06A91E52FD660098FC41 /* Currier */,
 				0C0A06B41E52FD660098FC41 /* CurrierTests */,
 				0C0A06A81E52FD660098FC41 /* Products */,
@@ -90,6 +95,15 @@
 				0C0A071B1E538E4E0098FC41 /* CurryTests.swift */,
 			);
 			path = CurrierTests;
+			sourceTree = "<group>";
+		};
+		0C6F5CA11E6798690071F2B4 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				0C6F5C9D1E67941F0071F2B4 /* LICENSE */,
+				0C6F5C9E1E67941F0071F2B4 /* README.md */,
+			);
+			name = Docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C6F5C9F1E67941F0071F2B4 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C6F5CA01E67941F0071F2B4 /* README.md in Sources */,
 				0C0A071A1E538E360098FC41 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
