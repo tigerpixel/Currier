@@ -22,12 +22,15 @@ The unit tests provide examples of calling the curry function using different nu
 
 There are no external requirements for this project, just Swift.
 
+- iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
+- Xcode 8.1+
+- Swift 3.0+
+
 ## Installation
 
 ### Cocoapods
 
-Currier is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Currier is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod "Currier"
@@ -37,7 +40,7 @@ pod "Currier"
 
 If you use [Carthage](https://github.com/Carthage/Carthage) to manage your dependencies, simply add the following line to your Cartfile:
 
-```
+```ogdl
 github "tigerpixel/Currier"
 ```
 
