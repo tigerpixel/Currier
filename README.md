@@ -28,7 +28,7 @@ assert(20 == result) // Assertion true
 
 ```
 
-And that example can be condensed down to the following:
+The previous example can be condensed down to the following:
 
 ```swift
 let sameResult = curry(myMultiply)(2.0)(10)
