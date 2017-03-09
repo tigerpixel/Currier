@@ -8,12 +8,30 @@
 
 Currier transforms any Swift function into a curried version of that function. This is achieved by wrapping it in a simple 'curry' call.
 
+Given the following function: 
+
 ```swift
-let myFunction: (Bool, Int) -> Float
-...
-let curriedFunction = curry(myFunction) // Currier used here.
-let firstApplication = curriedFunction(true)
-let result = firstApplication(10)
+func myMultiply(first: Float, second: Int) -> Double {
+    return Double(first) * Double(second)
+}
+```
+Currier will produce a curried version:
+
+```swift
+let curriedMultiply: (Float) -> (Int) -> Double = curry(myMultiply) // Currier used here!
+
+let multiplyByTwo: (Int) -> Double = curriedMultiply(2.0) // Partial application
+
+let result: Double = multiplyByTwo(10)
+
+assert(20 == result) // Assertion true
+
+```
+
+The previous example can be condensed down to the following:
+
+```swift
+let sameResult = curry(myMultiply)(2.0)(10)
 ```
 
 The unit tests provide examples of calling the curry function using different numbers of parameters. The version of the function which takes two parameters is explicitly typed and commented.
@@ -22,12 +40,15 @@ The unit tests provide examples of calling the curry function using different nu
 
 There are no external requirements for this project, just Swift.
 
+- iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
+- Xcode 8.1+
+- Swift 3.0+
+
 ## Installation
 
 ### Cocoapods
 
-Currier is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Currier is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod "Currier"
@@ -37,7 +58,7 @@ pod "Currier"
 
 If you use [Carthage](https://github.com/Carthage/Carthage) to manage your dependencies, simply add the following line to your Cartfile:
 
-```
+```ogdl
 github "tigerpixel/Currier"
 ```
 
