@@ -11,27 +11,27 @@ Currier transforms any Swift function into a curried version of that function. T
 Given the following function: 
 
 ```swift
-func myFunction(first: Float, second: Int) -> Double {
-return Double(first) * Double(second)
+func myMultiply(first: Float, second: Int) -> Double {
+    return Double(first) * Double(second)
 }
 ```
 Currier will produce a curried version:
 
 ```swift
-let curriedFunction: (Float) -> (Int) -> Double = curry(myFunction) // Currier used here!
+let curriedMultiply: (Float) -> (Int) -> Double = curry(myMultiply) // Currier used here!
 
-let firstApplication: (Int) -> Double = curriedFunction(2.0)
-let result: Double = firstApplication(10)
+let multiplyByTwo: (Int) -> Double = curriedMultiply(2.0) // Partial application
 
-if result == 20 {
-    print("This will print")
-}
+let result: Double = multiplyByTwo(10)
+
+assert(20 == result) // Assertion true
+
 ```
 
-And that can be condensed down to this:
+And that example can be condensed down to the following:
 
 ```swift
-let sameResult = curry(myFunction)(2.0)(10) // Currier used here!
+let sameResult = curry(myMultiply)(2.0)(10)
 ```
 
 The unit tests provide examples of calling the curry function using different numbers of parameters. The version of the function which takes two parameters is explicitly typed and commented.
