@@ -15,11 +15,11 @@
 		0C1DB7C11E775BF200230A33 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
 		0C1DB7C21E775BFA00230A33 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
 		0C1DB7C31E775C0200230A33 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
+		0C1DB7C71E77F3BD00230A33 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
 		0C1E61541E69EACD0034F4A3 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E61431E69EA640034F4A3 /* Currier.framework */; };
 		0C6F5CC71E68187A0071F2B4 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6F5CB51E6817B00071F2B4 /* Currier.framework */; };
 		0CDFFFA81E71E4FA00927BE3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
 		0CDFFFA91E71E51D00927BE3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
-		0CDFFFAA1E71E52500927BE3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
 		0CDFFFAB1E71E52E00927BE3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
 /* End PBXBuildFile section */
 
@@ -534,7 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CDFFFAA1E71E52500927BE3 /* Curry.swift in Sources */,
+				0C1DB7C71E77F3BD00230A33 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
