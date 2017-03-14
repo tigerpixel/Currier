@@ -12,14 +12,18 @@
 		0C05F59E1E6D5AEC004D1BDC /* Currier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A06AA1E52FD660098FC41 /* Currier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0C0A06B11E52FD660098FC41 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A06A71E52FD660098FC41 /* Currier.framework */; };
 		0C0A06B81E52FD660098FC41 /* Currier.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C0A06AA1E52FD660098FC41 /* Currier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0C0A071A1E538E360098FC41 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
 		0C0A071C1E538E4E0098FC41 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
 		0C1E61541E69EACD0034F4A3 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E61431E69EA640034F4A3 /* Currier.framework */; };
-		0C1E615A1E69EB170034F4A3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
-		0C6F5CAF1E6815400071F2B4 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
-		0C6F5CBD1E6818400071F2B4 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A07191E538E360098FC41 /* Curry.swift */; };
 		0C6F5CC71E68187A0071F2B4 /* Currier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6F5CB51E6817B00071F2B4 /* Currier.framework */; };
 		0C6F5CCE1E68189F0071F2B4 /* CurryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0A071B1E538E4E0098FC41 /* CurryTests.swift */; };
+		0CDFFFA81E71E4FA00927BE3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
+		0CDFFFA91E71E51D00927BE3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
+		0CDFFFAA1E71E52500927BE3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
+		0CDFFFAB1E71E52E00927BE3 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDFFFA71E71E4FA00927BE3 /* Curry.swift */; };
+		0CDFFFB21E71E9E500927BE3 /* Currier.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0CDFFFB11E71E9E500927BE3 /* Currier.podspec */; };
+		0CDFFFB31E71E9E500927BE3 /* Currier.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0CDFFFB11E71E9E500927BE3 /* Currier.podspec */; };
+		0CDFFFB41E71E9E500927BE3 /* Currier.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0CDFFFB11E71E9E500927BE3 /* Currier.podspec */; };
+		0CDFFFB51E71E9E500927BE3 /* Currier.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0CDFFFB11E71E9E500927BE3 /* Currier.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +56,6 @@
 		0C0A06AB1E52FD660098FC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0A06B01E52FD660098FC41 /* CurrierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0A06B71E52FD660098FC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0C0A07191E538E360098FC41 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		0C0A071B1E538E4E0098FC41 /* CurryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurryTests.swift; sourceTree = "<group>"; };
 		0C1E61431E69EA640034F4A3 /* Currier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Currier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1E614F1E69EACD0034F4A3 /* CurrierTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CurrierTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +64,9 @@
 		0C6F5CA71E6813FB0071F2B4 /* Currier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Currier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6F5CB51E6817B00071F2B4 /* Currier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Currier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6F5CC21E68187A0071F2B4 /* CurrierTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CurrierTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CDFFFA71E71E4FA00927BE3 /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Curry.swift; path = Source/Curry.swift; sourceTree = "<group>"; };
+		0CDFFFAC1E71E5D300927BE3 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		0CDFFFB11E71E9E500927BE3 /* Currier.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Currier.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				0C6F5CA11E6798690071F2B4 /* Docs */,
+				0CDFFFA61E71E47800927BE3 /* Source */,
 				0C0A06A91E52FD660098FC41 /* Currier */,
 				0C0A06B41E52FD660098FC41 /* CurrierTests */,
 				0C0A06A81E52FD660098FC41 /* Products */,
@@ -148,7 +155,6 @@
 			children = (
 				0C0A06AA1E52FD660098FC41 /* Currier.h */,
 				0C0A06AB1E52FD660098FC41 /* Info.plist */,
-				0C0A07191E538E360098FC41 /* Curry.swift */,
 			);
 			path = Currier;
 			sourceTree = "<group>";
@@ -165,10 +171,20 @@
 		0C6F5CA11E6798690071F2B4 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
+				0CDFFFB11E71E9E500927BE3 /* Currier.podspec */,
+				0CDFFFAC1E71E5D300927BE3 /* Package.swift */,
 				0C6F5C9D1E67941F0071F2B4 /* LICENSE */,
 				0C6F5C9E1E67941F0071F2B4 /* README.md */,
 			);
 			name = Docs;
+			sourceTree = "<group>";
+		};
+		0CDFFFA61E71E47800927BE3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0CDFFFA71E71E4FA00927BE3 /* Curry.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +421,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDFFFB21E71E9E500927BE3 /* Currier.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +436,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDFFFB51E71E9E500927BE3 /* Currier.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +451,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDFFFB31E71E9E500927BE3 /* Currier.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CDFFFB41E71E9E500927BE3 /* Currier.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +493,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0A071A1E538E360098FC41 /* Curry.swift in Sources */,
+				0CDFFFA81E71E4FA00927BE3 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,7 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C1E615A1E69EB170034F4A3 /* Curry.swift in Sources */,
+				0CDFFFAB1E71E52E00927BE3 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +524,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C6F5CAF1E6815400071F2B4 /* Curry.swift in Sources */,
+				0CDFFFA91E71E51D00927BE3 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,7 +532,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C6F5CBD1E6818400071F2B4 /* Curry.swift in Sources */,
+				0CDFFFAA1E71E52500927BE3 /* Curry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -894,6 +914,7 @@
 		0C6F5CCB1E68187A0071F2B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -910,6 +931,7 @@
 		0C6F5CCC1E68187A0071F2B4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
