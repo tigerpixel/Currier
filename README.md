@@ -64,6 +64,18 @@ github "tigerpixel/Currier"
 
 If you use Carthage to build your dependencies, make sure you have added `Currier.framework` to the "_Linked Frameworks and Libraries_" section of your target, and have included them in your Carthage framework copying build phase.
 
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager) is the official tool for managing the distribution of Swift code. It is currently only available for macOS. It can also be used with Linux but this project does not fully suppourt that at this point. 
+
+If you use it to manage your dependencies, simply add Currier to the dependencies value of your Package.swift file.
+
+```swift
+dependencies: [
+    .Package(url: "https://github.com/Tigerpixel/Currier.git", majorVersion: 0)
+]
+```
+
 ### Git Submodule
 
 1. Add the Currier repository as a [submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules) of your application’s repository.
