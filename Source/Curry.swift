@@ -6,19 +6,32 @@
 //  Copyright © 2017 Tigerpixel Ltd. All rights reserved.
 //
 
+/**
+ Create a curried version of the two parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with two parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
 public func curry<First, Second, Result>(_ uncurried: // Declare generic names.
 
     @escaping (First, Second) -> Result) // Input signature.
     -> (First) -> (Second) -> Result { // Output signature.
 
-    return { (first: First) -> (Second) -> Result
-        in { (second: Second) -> Result in
+    return { (first: First) -> (Second) -> Result in { (second: Second) -> Result in
 
             return uncurried(first, second)
         }
     }
 }
 
+/**
+ Create a curried version of the three parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with three parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
 public func curry<First, Second, Third, Result>(_ uncurried:
 
     @escaping (First, Second, Third) -> Result)
@@ -32,6 +45,13 @@ public func curry<First, Second, Third, Result>(_ uncurried:
     }
 }
 
+/**
+ Create a curried version of the four parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with four parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
 public func curry<First, Second, Third, Fourth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth) -> Result)
@@ -46,6 +66,13 @@ public func curry<First, Second, Third, Fourth, Result>(_ uncurried:
     }
 }
 
+/**
+ Create a curried version of the five parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with five parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
 public func curry<First, Second, Third, Fourth, Fifth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth, Fifth) -> Result)
@@ -61,16 +88,21 @@ public func curry<First, Second, Third, Fourth, Fifth, Result>(_ uncurried:
     }
 }
 
-public func curry<First, Second, Third, Fourth,
-                  Fifth, Sixth, Result>(_ uncurried:
+/**
+ Create a curried version of the six parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with six parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
                Fifth, Sixth) -> Result)
     -> (First) -> (Second) -> (Third) -> (Fourth)
     -> (Fifth) -> (Sixth) -> Result {
 
-        return { first in { second in { third in { fourth
-            in { fifth in { sixth in
+        return { first in { second in { third in { fourth in { fifth in { sixth in
 
                             return uncurried(first, second, third, fourth, fifth, sixth)
                         }
@@ -81,16 +113,21 @@ public func curry<First, Second, Third, Fourth,
     }
 }
 
-public func curry<First, Second, Third, Fourth,
-                  Fifth, Sixth, Seventh, Result>(_ uncurried:
+/**
+ Create a curried version of the seven parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with seven parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
                Fifth, Sixth, Seventh) -> Result)
     -> (First) -> (Second) -> (Third) -> (Fourth)
     -> (Fifth) -> (Sixth) -> (Seventh) -> Result {
 
-        return { first in { second in { third in { fourth
-            in { fifth in { sixth in { seventh in
+        return { first in { second in { third in { fourth in { fifth in { sixth in { seventh in
 
                                 return uncurried(first, second, third, fourth, fifth, sixth, seventh)
                             }
@@ -102,8 +139,14 @@ public func curry<First, Second, Third, Fourth,
     }
 }
 
-public func curry<First, Second, Third, Fourth,
-                  Fifth, Sixth, Seventh, Eighth, Result>(_ uncurried:
+/**
+ Create a curried version of the eight parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with eight parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
                Fifth, Sixth, Seventh, Eighth) -> Result)
@@ -125,8 +168,14 @@ public func curry<First, Second, Third, Fourth,
     }
 }
 
-public func curry<First, Second, Third, Fourth,
-                  Fifth, Sixth, Seventh, Eighth, Ninth, Result>(_ uncurried:
+/**
+ Create a curried version of the nine parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with nine parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, Ninth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
                Fifth, Sixth, Seventh, Eighth, Ninth) -> Result)
@@ -149,6 +198,13 @@ public func curry<First, Second, Third, Fourth,
     }
 }
 
+/**
+ Create a curried version of the ten parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with ten parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
 public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, Ninth, Tenth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
@@ -176,9 +232,15 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, N
     }
 }
 
-public func curry<First, Second, Third, Fourth,
-                  Fifth, Sixth, Seventh, Eighth, Ninth, Tenth,
-                  Eleventh, Result>(_ uncurried:
+/**
+ Create a curried version of the eleven parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with eleven parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh,
+                  Eighth, Ninth, Tenth, Eleventh, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
                Fifth, Sixth, Seventh, Eighth,
@@ -207,9 +269,15 @@ public func curry<First, Second, Third, Fourth,
     }
 }
 
-public func curry<First, Second, Third, Fourth,
-                  Fifth, Sixth, Seventh, Eighth,
-                  Ninth, Tenth, Eleventh, Twelfth, Result>(_ uncurried:
+/**
+ Create a curried version of the twelve parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with twelve parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh,
+                  Eighth, Ninth, Tenth, Eleventh, Twelfth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
                Fifth, Sixth, Seventh, Eighth,
@@ -239,10 +307,15 @@ public func curry<First, Second, Third, Fourth,
     }
 }
 
-public func curry<First, Second, Third, Fourth,
-                  Fifth, Sixth, Seventh, Eighth,
-                  Ninth, Tenth, Eleventh, Twelfth,
-                  Thirteenth, Result>(_ uncurried:
+/**
+ Create a curried version of the thirteen parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with thirteen parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh,
+                  Eighth, Ninth, Tenth, Eleventh, Twelfth, Thirteenth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
     Fifth, Sixth, Seventh, Eighth,
@@ -254,13 +327,11 @@ public func curry<First, Second, Third, Fourth,
 
         return { first in { second in { third in { fourth
             in { fifth in { sixth in { seventh in { eighth
-            in { ninth in { tenth in { eleventh in { twelfth
-            in { thirteenth in
+            in { ninth in { tenth in { eleventh in { twelfth in { thirteenth in
 
                                                         return uncurried(first, second, third, fourth,
                                                                          fifth, sixth, seventh, eighth,
-                                                                         ninth, tenth, eleventh, twelfth,
-                                                                         thirteenth)
+                                                                         ninth, tenth, eleventh, twelfth, thirteenth)
                                                     }
                                                 }
                                             }
@@ -276,10 +347,15 @@ public func curry<First, Second, Third, Fourth,
     }
 }
 
-public func curry<First, Second, Third, Fourth,
-                  Fifth, Sixth, Seventh, Eighth,
-                  Ninth, Tenth, Eleventh, Twelfth,
-                  Thirteenth, Fourteenth, Result>(_ uncurried:
+/**
+ Create a curried version of the fourteen parameter function given as the input parameter.
+ 
+ - parameter uncurried: A function with fourteen parameters. The subject of the curry.
+ 
+ - returns: A curried version of the uncurried input function.
+ */
+public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh,
+                  Eighth, Ninth, Tenth, Eleventh, Twelfth, Thirteenth, Fourteenth, Result>(_ uncurried:
 
     @escaping (First, Second, Third, Fourth,
     Fifth, Sixth, Seventh, Eighth,
