@@ -22,7 +22,6 @@ Produces a curried version of almost any other function. Just wrap your function
   s.watchos.deployment_target = '2.0'
   s.osx.deployment_target = '10.9'
   s.tvos.deployment_target = '9.0'
-  s.swift_version = '3.0'
 
   s.source_files = 'Source/**/*.swift'
 end
