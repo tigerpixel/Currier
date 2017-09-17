@@ -41,8 +41,8 @@ The unit tests provide examples of calling the curry function using different nu
 There are no external requirements for this project, just Swift.
 
 - iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 8.1+
-- Swift 3.0+
+- Xcode 8.3+
+- Swift 3.1+
 
 ## Installation
 
