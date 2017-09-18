@@ -72,7 +72,7 @@ If you use it to manage your dependencies, simply add Currier to the dependencie
 
 ```swift
 dependencies: [
-    .Package(url: "https://github.com/Tigerpixel/Currier.git", majorVersion: 0)
+    .Package(url: "https://github.com/Tigerpixel/Currier.git", majorVersion: 1)
 ]
 ```
 
