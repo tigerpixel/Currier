@@ -1,4 +1,4 @@
-## Currier
+# Currier
 
 [![Build Status](https://travis-ci.org/tigerpixel/Currier.svg?branch=master)](https://travis-ci.org/tigerpixel/Currier)
 [![Version](https://img.shields.io/cocoapods/v/Currier.svg?style=flat)](http://cocoapods.org/pods/Currier)
@@ -8,13 +8,14 @@
 
 Currier transforms any Swift function into a curried version of that function. This is achieved by wrapping it in a simple 'curry' call.
 
-Given the following function: 
+Given the following function:
 
 ```swift
 func myMultiply(first: Float, second: Int) -> Double {
     return Double(first) * Double(second)
 }
 ```
+
 Currier will produce a curried version:
 
 ```swift
@@ -41,8 +42,10 @@ The unit tests provide examples of calling the curry function using different nu
 There are no external requirements for this project, just Swift.
 
 - iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 8.3+
-- Swift 3.1+
+- Xcode 9.0+
+- Swift 4.0+
+
+For older versions of Swift and Xcode, please see prior releases.
 
 ## Installation
 
@@ -66,7 +69,7 @@ If you use Carthage to build your dependencies, make sure you have added `Currie
 
 ### Swift Package Manager
 
-The [Swift Package Manager](https://swift.org/package-manager) is the official tool for managing the distribution of Swift code. It is currently only available for macOS. It can also be used with Linux but this project does not fully suppourt that at this point. 
+The [Swift Package Manager](https://swift.org/package-manager) is the official tool for managing the distribution of Swift code. It is currently only available for macOS. It can also be used with Linux but this project does not fully suppourt that at this point.
 
 If you use it to manage your dependencies, simply add Currier to the dependencies value of your Package.swift file.
 
@@ -82,8 +85,7 @@ dependencies: [
 1. Run `git submodule update --init --recursive` from within the Currier folder.
 1. Drag and drop `Currier.xcodeproj` into your application’s Xcode project or workspace.
 1. On the “General” tab of your application target’s settings, add `Currier.framework`. to the “Embedded Binaries” section.
-1. If your application target does not contain Swift code at all, you should also
-set the `EMBEDDED_CONTENT_CONTAINS_SWIFT` build setting to “Yes”.
+1. If your application target does not contain Swift code at all, you should also set the `EMBEDDED_CONTENT_CONTAINS_SWIFT` build setting to “Yes”.
 
 ## MIT License
 
