@@ -125,7 +125,7 @@ class CurryTests: XCTestCase {
     func testTwoDistinctParams() {
 
         func three(first: String, second: Float) -> Int {
-            return first.characters.count + Int(second)
+            return first.count + Int(second)
         }
 
         let curried = curry(three)
@@ -137,7 +137,7 @@ class CurryTests: XCTestCase {
     func testThreeDistinctParams() {
 
         func three(first: String, second: Int, third: Float) -> Int {
-            return first.characters.count + second + Int(third)
+            return first.count + second + Int(third)
         }
 
         let curried = curry(three)
@@ -149,7 +149,7 @@ class CurryTests: XCTestCase {
     func testFourDistinctParams() {
 
         func four(first: String, second: Int, third: Float, fourth: ReferenceType) -> Int {
-            return first.characters.count + second + Int(third) + Int(fourth.value)
+            return first.count + second + Int(third) + Int(fourth.value)
         }
 
         let curried = curry(four)
@@ -161,7 +161,7 @@ class CurryTests: XCTestCase {
     func testFiveDistinctParams() {
 
         func five(first: String, second: Int, third: Float, fourth: ReferenceType, fifth: ValueType) -> Int {
-            return first.characters.count + second + Int(third) + Int(fourth.value) + Int(fifth.value)
+            return first.count + second + Int(third) + Int(fourth.value) + Int(fifth.value)
         }
 
         let curried = curry(five)
@@ -177,7 +177,7 @@ class CurryTests: XCTestCase {
         func six(first: String, second: Int, third: Float,
                  fourth: ReferenceType, fifth: ValueType, sixth: Bool) -> Int {
 
-            return first.characters.count + second + Int(third)
+            return first.count + second + Int(third)
                 + Int(fourth.value) + Int(fifth.value) + (sixth ? 6 : 0)
         }
 
