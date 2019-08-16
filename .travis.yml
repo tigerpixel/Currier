@@ -11,6 +11,6 @@ script:
 
 - xcodebuild test -project Currier.xcodeproj -scheme Currier-iOS -destination 'platform=iOS Simulator,OS=latest,name=iPhone 8'
 - xcodebuild test -project Currier.xcodeproj -scheme Currier-macOS -destination 'platform=macOS,arch=x86_64' 
-- xcodebuild test -project Currier.xcodeproj -scheme Currier-tvOS -destination 'platform=tvOS Simulator,name=Apple TV 1080p'
+- xcodebuild test -project Currier.xcodeproj -scheme Currier-tvOS -destination 'platform=tvOS Simulator,OS=latest,name=Apple TV 4K'
 
 - xcodebuild -project Currier.xcodeproj -scheme Currier-watchOS
