@@ -39,12 +39,12 @@ class CurryTests: XCTestCase {
 
     func testDigitSumHelperFunction() {
 
-        XCTAssertEqual(0, digitSum(of:0))
-        XCTAssertEqual(1, digitSum(of:1))
-        XCTAssertEqual(3, digitSum(of:2))
-        XCTAssertEqual(6, digitSum(of:3))
-        XCTAssertEqual(55, digitSum(of:10))
-        XCTAssertEqual(153, digitSum(of:17))
+        XCTAssertEqual(0, digitSum(of: 0))
+        XCTAssertEqual(1, digitSum(of: 1))
+        XCTAssertEqual(3, digitSum(of: 2))
+        XCTAssertEqual(6, digitSum(of: 3))
+        XCTAssertEqual(55, digitSum(of: 10))
+        XCTAssertEqual(153, digitSum(of: 17))
     }
 
     func testTwoStringParams() {
@@ -78,12 +78,12 @@ class CurryTests: XCTestCase {
     func testTwoRefTypeParams() {
 
         func twoReferenceTypes(first: ReferenceType, second: ReferenceType) -> ReferenceType {
-            return ReferenceType(value:first.value + second.value)
+            return ReferenceType(value: first.value + second.value)
         }
 
         let curried = curry(twoReferenceTypes)
-        let partiallyApplied = curried(ReferenceType(value:3))
-        let result = partiallyApplied(ReferenceType(value:6))
+        let partiallyApplied = curried(ReferenceType(value: 3))
+        let result = partiallyApplied(ReferenceType(value: 6))
 
         XCTAssertEqual(9, result.value)
     }
@@ -91,12 +91,12 @@ class CurryTests: XCTestCase {
     func testTwoStructParams() {
 
         func twoStructs(first: ValueType, second: ValueType) -> ValueType {
-            return ValueType(value:first.value + second.value)
+            return ValueType(value: first.value + second.value)
         }
 
         let curried = curry(twoStructs)
-        let partiallyApplied = curried(ValueType(value:3))
-        let result = partiallyApplied(ValueType(value:6))
+        let partiallyApplied = curried(ValueType(value: 3))
+        let result = partiallyApplied(ValueType(value: 6))
 
         XCTAssertEqual(9, result.value)
     }
@@ -131,7 +131,7 @@ class CurryTests: XCTestCase {
         let curried = curry(three)
         let result = curried("a")(2)
 
-        XCTAssertEqual(digitSum(of:2), result)
+        XCTAssertEqual(digitSum(of: 2), result)
     }
 
     func testThreeDistinctParams() {
@@ -143,7 +143,7 @@ class CurryTests: XCTestCase {
         let curried = curry(three)
         let result = curried("a")(2)(3.0)
 
-        XCTAssertEqual(digitSum(of:3), result)
+        XCTAssertEqual(digitSum(of: 3), result)
     }
 
     func testFourDistinctParams() {
@@ -153,9 +153,9 @@ class CurryTests: XCTestCase {
         }
 
         let curried = curry(four)
-        let result = curried("a")(2)(3.0)(ReferenceType(value:4.0))
+        let result = curried("a")(2)(3.0)(ReferenceType(value: 4.0))
 
-        XCTAssertEqual(digitSum(of:4), result)
+        XCTAssertEqual(digitSum(of: 4), result)
     }
 
     func testFiveDistinctParams() {
@@ -165,9 +165,9 @@ class CurryTests: XCTestCase {
         }
 
         let curried = curry(five)
-        let result = curried("a")(2)(3.0)(ReferenceType(value:4.0))(ValueType(value: 5))
+        let result = curried("a")(2)(3.0)(ReferenceType(value: 4.0))(ValueType(value: 5))
 
-        XCTAssertEqual(digitSum(of:5), result)
+        XCTAssertEqual(digitSum(of: 5), result)
     }
 
     // swiftlint:disable function_parameter_count
@@ -182,9 +182,9 @@ class CurryTests: XCTestCase {
         }
 
         let curried = curry(six)
-        let result = curried("a")(2)(3.0)(ReferenceType(value:4.0))(ValueType(value: 5))(true)
+        let result = curried("a")(2)(3.0)(ReferenceType(value: 4.0))(ValueType(value: 5))(true)
 
-        XCTAssertEqual(digitSum(of:6), result)
+        XCTAssertEqual(digitSum(of: 6), result)
     }
 
     // MARK: Increasing numbers of string parameters.
