@@ -24,5 +24,5 @@ Produces a curried version of almost any other function. Just wrap your function
   s.tvos.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.source_files = 'Source/**/*.swift'
+  s.source_files = 'Sources/**/*.swift'
 end
