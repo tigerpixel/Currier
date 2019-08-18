@@ -42,8 +42,8 @@ The unit tests provide examples of calling the curry function using different nu
 There are no external requirements for this project, just Swift.
 
 - iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 9.0+
-- Swift 4.0+
+- Xcode 10.3+
+- Swift 5.0+
 
 For older versions of Swift and Xcode, please see prior releases.
 
@@ -51,7 +51,7 @@ For older versions of Swift and Xcode, please see prior releases.
 
 ### Cocoapods
 
-Currier is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
+Currier is available through [CocoaPods](https://cocoapods.org/pods/Currier). To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod "Currier"
