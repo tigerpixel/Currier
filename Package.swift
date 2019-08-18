@@ -1,3 +1,4 @@
+// swift-tools-version:4.0
 //
 //  Package.swift
 //  Currier
@@ -11,5 +12,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "Currier"
+    name: "Currier",
+    products: [
+        .library(name: "Currier", targets: ["Currier"])
+    ],
+    targets: [
+        .target(name: "Currier"),
+        .testTarget(name: "CurrierTests", dependencies: ["Currier"])
+    ]
 )

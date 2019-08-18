@@ -127,7 +127,7 @@
 			children = (
 				0C6F5CA11E6798690071F2B4 /* Docs */,
 				0C0A06A91E52FD660098FC41 /* Currier */,
-				0CDFFFA61E71E47800927BE3 /* Source */,
+				0CDFFFA61E71E47800927BE3 /* Sources */,
 				0C1DB7C51E77699400230A33 /* Tests */,
 				0C0A06A81E52FD660098FC41 /* Products */,
 			);
@@ -173,6 +173,14 @@
 			path = CurrierTests;
 			sourceTree = "<group>";
 		};
+		0C2BB6AD230957D600904802 /* Currier */ = {
+			isa = PBXGroup;
+			children = (
+				0CDFFFA71E71E4FA00927BE3 /* Curry.swift */,
+			);
+			path = Currier;
+			sourceTree = "<group>";
+		};
 		0C6F5CA11E6798690071F2B4 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,12 +192,12 @@
 			name = Docs;
 			sourceTree = "<group>";
 		};
-		0CDFFFA61E71E47800927BE3 /* Source */ = {
+		0CDFFFA61E71E47800927BE3 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				0CDFFFA71E71E4FA00927BE3 /* Curry.swift */,
+				0C2BB6AD230957D600904802 /* Currier */,
 			);
-			path = Source;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
