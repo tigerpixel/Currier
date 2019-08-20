@@ -6,7 +6,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Currier'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Fantastically easy function currying in Swift.'
   s.description      = <<-DESC
 Produces a curried version of almost any other function. Just wrap your function in a single call ‘curry(myFunction)’ and the result will be a curried version of your original. A useful tool for working with parser combinators and other functional programming projects. Currently supports up to 14 parameters. Pull requests for improvements are welcome.
@@ -24,5 +24,5 @@ Produces a curried version of almost any other function. Just wrap your function
   s.tvos.deployment_target = '9.0'
   s.swift_version = '5.0'
 
-  s.source_files = 'Source/**/*.swift'
+  s.source_files = 'Sources/**/*.swift'
 end
