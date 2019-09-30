@@ -42,12 +42,24 @@ The unit tests provide examples of calling the curry function using different nu
 There are no external requirements for this project, just Swift.
 
 - iOS 8.0+ / macOS 10.9+ / tvOS 9.0+ / watchOS 2.0+
-- Xcode 10.3+
-- Swift 5.0+
+- Xcode 11+
+- Swift 5.1+
 
 For older versions of Swift and Xcode, please see prior releases.
 
 ## Installation
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager) is the official tool for managing the distribution of Swift code. It is currently only available for all Apple platforms. It can also be used with Linux but this project does not fully suppourt that at this point.
+
+If you use it to manage your dependencies, simply add Currier to the dependencies value of your Package.swift file.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/tigerpixel/Currier.git", from: "1.3")
+]
+```
 
 ### Cocoapods
 
@@ -66,18 +78,6 @@ github "tigerpixel/Currier"
 ```
 
 If you use Carthage to build your dependencies, make sure you have added `Currier.framework` to the "_Linked Frameworks and Libraries_" section of your target, and have included them in your Carthage framework copying build phase.
-
-### Swift Package Manager
-
-The [Swift Package Manager](https://swift.org/package-manager) is the official tool for managing the distribution of Swift code. It is currently only available for macOS. It can also be used with Linux but this project does not fully suppourt that at this point.
-
-If you use it to manage your dependencies, simply add Currier to the dependencies value of your Package.swift file.
-
-```swift
-dependencies: [
-    .Package(url: "https://github.com/Tigerpixel/Currier.git", majorVersion: 1)
-]
-```
 
 ### Git Submodule
 

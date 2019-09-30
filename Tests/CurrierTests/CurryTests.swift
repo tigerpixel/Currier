@@ -32,7 +32,7 @@ class CurryTests: XCTestCase {
     // MARK: Helper functions.
 
     func digitSum(of value: Int) -> Int {
-        return (0...value).reduce(0) { $0 + $1 }
+        (0...value).reduce(0) { $0 + $1 }
     }
 
     // MARK: Two parameters with basic types.
@@ -63,7 +63,7 @@ class CurryTests: XCTestCase {
     func testTwoIntParams() {
 
         func twoInts(first: Int, second: Int) -> Int {
-            return first + second
+            first + second
         }
 
         let curried = curry(twoInts)
@@ -91,7 +91,7 @@ class CurryTests: XCTestCase {
     func testTwoStructParams() {
 
         func twoStructs(first: ValueType, second: ValueType) -> ValueType {
-            return ValueType(value: first.value + second.value)
+            ValueType(value: first.value + second.value)
         }
 
         let curried = curry(twoStructs)
@@ -110,7 +110,7 @@ class CurryTests: XCTestCase {
     func testTwoGenericParams() {
 
         func twoGenerics<A: Comparable>(first: A, second: A) -> A {
-            return first > second ? first : second
+            first > second ? first : second
         }
 
         let result = curry(twoGenerics)("alpha")("beta")
@@ -125,7 +125,7 @@ class CurryTests: XCTestCase {
     func testTwoDistinctParams() {
 
         func three(first: String, second: Float) -> Int {
-            return first.count + Int(second)
+            first.count + Int(second)
         }
 
         let curried = curry(three)
@@ -137,7 +137,7 @@ class CurryTests: XCTestCase {
     func testThreeDistinctParams() {
 
         func three(first: String, second: Int, third: Float) -> Int {
-            return first.count + second + Int(third)
+            first.count + second + Int(third)
         }
 
         let curried = curry(three)
@@ -149,7 +149,7 @@ class CurryTests: XCTestCase {
     func testFourDistinctParams() {
 
         func four(first: String, second: Int, third: Float, fourth: ReferenceType) -> Int {
-            return first.count + second + Int(third) + Int(fourth.value)
+            first.count + second + Int(third) + Int(fourth.value)
         }
 
         let curried = curry(four)
@@ -161,7 +161,7 @@ class CurryTests: XCTestCase {
     func testFiveDistinctParams() {
 
         func five(first: String, second: Int, third: Float, fourth: ReferenceType, fifth: ValueType) -> Int {
-            return first.count + second + Int(third) + Int(fourth.value) + Int(fifth.value)
+            first.count + second + Int(third) + Int(fourth.value) + Int(fifth.value)
         }
 
         let curried = curry(five)
@@ -177,7 +177,7 @@ class CurryTests: XCTestCase {
         func six(first: String, second: Int, third: Float,
                  fourth: ReferenceType, fifth: ValueType, sixth: Bool) -> Int {
 
-            return first.count + second + Int(third)
+            first.count + second + Int(third)
                 + Int(fourth.value) + Int(fifth.value) + (sixth ? 6 : 0)
         }
 
@@ -196,7 +196,7 @@ class CurryTests: XCTestCase {
         func seven(first: String, second: String, third: String, fourth: String,
                    fifth: String, sixth: String, seventh: String) -> String {
 
-            return first + second + third + fourth + fifth + sixth + seventh
+            first + second + third + fourth + fifth + sixth + seventh
         }
 
         let curried = curry(seven)
@@ -210,7 +210,7 @@ class CurryTests: XCTestCase {
         func eight(first: String, second: String, third: String, fourth: String,
                    fifth: String, sixth: String, seventh: String, eighth: String) -> String {
 
-            return first + second + third + fourth + fifth + sixth + seventh + eighth
+            first + second + third + fourth + fifth + sixth + seventh + eighth
         }
 
         let curried = curry(eight)
@@ -225,7 +225,7 @@ class CurryTests: XCTestCase {
                   fourth: String, fifth: String, sixth: String,
                   seventh: String, eighth: String, ninth: String) -> String {
 
-            return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth
+            first + second + third + fourth + fifth + sixth + seventh + eighth + ninth
         }
 
         let curried = curry(nine)
@@ -240,7 +240,7 @@ class CurryTests: XCTestCase {
                  fifth: String, sixth: String, seventh: String, eighth: String,
                  ninth: String, tenth: String) -> String {
 
-            return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth + tenth
+            first + second + third + fourth + fifth + sixth + seventh + eighth + ninth + tenth
         }
 
         let curried = curry(ten)
@@ -255,7 +255,8 @@ class CurryTests: XCTestCase {
                     fifth: String, sixth: String, seventh: String, eighth: String,
                     ninth: String, tenth: String, eleventh: String) -> String {
 
-            return first + second + third + fourth + fifth + sixth + seventh + eighth + ninth + tenth + eleventh
+            first + second + third + fourth + fifth + sixth
+                + seventh + eighth + ninth + tenth + eleventh
         }
 
         let curried = curry(eleven)
@@ -284,7 +285,7 @@ class CurryTests: XCTestCase {
         let twelfth: String
 
         func makeResult() -> String {
-            return first + second + third + fourth + fifth + sixth
+            first + second + third + fourth + fifth + sixth
                 + seventh + eighth + ninth + tenth + eleventh + twelfth
         }
     }
@@ -314,7 +315,7 @@ class CurryTests: XCTestCase {
         let thirteenth: String
 
         func makeResult() -> String {
-            return first + second + third + fourth + fifth + sixth
+            first + second + third + fourth + fifth + sixth
                 + seventh + eighth + ninth + tenth + eleventh + twelfth + thirteenth
         }
     }
@@ -345,7 +346,7 @@ class CurryTests: XCTestCase {
         let fourteenth: String
 
         func makeResult() -> String {
-            return first + second + third + fourth + fifth + sixth
+            first + second + third + fourth + fifth + sixth
                 + seventh + eighth + ninth + tenth + eleventh + twelfth
                 + thirteenth + fourteenth
         }
