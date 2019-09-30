@@ -57,7 +57,7 @@ If you use it to manage your dependencies, simply add Currier to the dependencie
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/tigerpixel/Currier.git", from: "1.3")
+.package(url: "https://github.com/tigerpixel/Currier.git", from: "1.3.0")
 ]
 ```
 
