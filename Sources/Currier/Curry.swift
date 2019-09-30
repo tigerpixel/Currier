@@ -37,7 +37,7 @@ public func curry<First, Second, Third, Result>(_ uncurried:
     @escaping (First, Second, Third) -> Result)
     -> (First) -> (Second) -> (Third) -> Result {
 
-    { first in { second in { third in
+    return { first in { second in { third in
 
                 uncurried(first, second, third)
             }
@@ -57,7 +57,7 @@ public func curry<First, Second, Third, Fourth, Result>(_ uncurried:
     @escaping (First, Second, Third, Fourth) -> Result)
     -> (First) -> (Second) -> (Third) -> (Fourth) -> Result {
 
-    { first in { second in { third in { fourth in
+    return { first in { second in { third in { fourth in
 
                     uncurried(first, second, third, fourth)
                 }
@@ -78,7 +78,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Result>(_ uncurried:
     @escaping (First, Second, Third, Fourth, Fifth) -> Result)
     -> (First) -> (Second) -> (Third) -> (Fourth) -> (Fifth) -> Result {
 
-    { first in { second in { third in { fourth in { fifth in
+    return { first in { second in { third in { fourth in { fifth in
 
                         uncurried(first, second, third, fourth, fifth)
                     }
@@ -102,7 +102,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Result>(_ uncurrie
     -> (First) -> (Second) -> (Third) -> (Fourth)
     -> (Fifth) -> (Sixth) -> Result {
 
-        { first in { second in { third in { fourth in { fifth in { sixth in
+        return { first in { second in { third in { fourth in { fifth in { sixth in
 
                             uncurried(first, second, third, fourth, fifth, sixth)
                         }
@@ -127,7 +127,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Result>(_
     -> (First) -> (Second) -> (Third) -> (Fourth)
     -> (Fifth) -> (Sixth) -> (Seventh) -> Result {
 
-        { first in { second in { third in { fourth in { fifth in { sixth in { seventh in
+        return { first in { second in { third in { fourth in { fifth in { sixth in { seventh in
 
                                 uncurried(first, second, third, fourth, fifth, sixth, seventh)
                             }
@@ -153,7 +153,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, R
     -> (First) -> (Second) -> (Third) -> (Fourth)
     -> (Fifth) -> (Sixth) -> (Seventh) -> (Eighth) -> Result {
 
-        { first in { second in { third in { fourth
+        return { first in { second in { third in { fourth
             in { fifth in { sixth in { seventh in { eighth in
 
                                     uncurried(first, second, third, fourth,
@@ -182,7 +182,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, N
     -> (First) -> (Second) -> (Third) -> (Fourth)
     -> (Fifth) -> (Sixth) -> (Seventh) -> (Eighth) -> (Ninth) -> Result {
 
-        { first in { second in { third in { fourth
+        return { first in { second in { third in { fourth
             in { fifth in { sixth in { seventh in { eighth in { ninth in
 
                                         uncurried(first, second, third, fourth, fifth,
@@ -214,7 +214,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh, Eighth, N
     -> (Fifth) -> (Sixth) -> (Seventh) -> (Eighth)
     -> (Ninth) -> (Tenth) -> Result {
 
-        { first in { second in { third in { fourth
+        return { first in { second in { third in { fourth
             in { fifth in { sixth in { seventh in { eighth
             in { ninth in { tenth in
 
@@ -249,7 +249,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh,
     -> (Fifth) -> (Sixth) -> (Seventh) -> (Eighth)
     -> (Ninth) -> (Tenth) -> (Eleventh) -> Result {
 
-        { first in { second in { third in { fourth
+        return { first in { second in { third in { fourth
             in { fifth in { sixth in { seventh in { eighth
             in { ninth in { tenth in { eleventh in
 
@@ -286,7 +286,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh,
     -> (Fifth) -> (Sixth) -> (Seventh) -> (Eighth)
     -> (Ninth) -> (Tenth) -> (Eleventh) -> (Twelfth) -> Result {
 
-        { first in { second in { third in { fourth
+        return { first in { second in { third in { fourth
             in { fifth in { sixth in { seventh in { eighth
             in { ninth in { tenth in { eleventh in { twelfth in
 
@@ -325,7 +325,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh,
     -> (Ninth) -> (Tenth) -> (Eleventh) -> (Twelfth)
     -> (Thirteenth) -> Result {
 
-        { first in { second in { third in { fourth
+        return { first in { second in { third in { fourth
             in { fifth in { sixth in { seventh in { eighth
             in { ninth in { tenth in { eleventh in { twelfth in { thirteenth in
 
@@ -366,7 +366,7 @@ public func curry<First, Second, Third, Fourth, Fifth, Sixth, Seventh,
     -> (Ninth) -> (Tenth) -> (Eleventh) -> (Twelfth)
     -> (Thirteenth) -> (Fourteenth) -> Result {
 
-        { first in { second in { third in { fourth
+        return { first in { second in { third in { fourth
             in { fifth in { sixth in { seventh in { eighth
             in { ninth in { tenth in { eleventh in { twelfth
             in { thirteenth in { fourteenth in
