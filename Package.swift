@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.1
 //
 //  Package.swift
 //  Currier
@@ -13,6 +13,10 @@ import PackageDescription
 
 let package = Package(
     name: "Currier",
+    platforms: [
+        // Other platforms compile as far back as possible by default.
+        .macOS(.v10_10)
+    ],
     products: [
         .library(name: "Currier", targets: ["Currier"])
     ],
