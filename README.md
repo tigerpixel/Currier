@@ -51,7 +51,7 @@ For older versions of Swift and Xcode, please see prior releases.
 
 ### Swift Package Manager
 
-The [Swift Package Manager](https://swift.org/package-manager) is the official tool for managing the distribution of Swift code. It is currently only available for all Apple platforms. It can also be used with Linux but this project does not fully suppourt that at this point.
+The [Swift Package Manager](https://swift.org/package-manager) is the official tool for managing the distribution of Swift code. It is currently only available for all Apple platforms. It can also be used with Linux but this project does not fully support that at this point.
 
 If you use it to manage your dependencies, simply add Currier to the dependencies value of your Package.swift file.
 
